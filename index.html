@@ -7,87 +7,94 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Sifonn', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #ecf0f1;
-            color: #2c3e50;
+            background-color: #ffffff; /* Change background color to white */
+            color: #121212; /* Change text color to black for visibility */
             animation: fadeIn 1.5s ease-in-out;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        h1 {
+        h2 {
             font-family: 'Oswald', sans-serif;
             font-size: 3em;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
             animation: slideIn 1s ease-in-out;
+            border: 2px solid #ffffff; /* Add thin border */
+            padding: 10px;
+            border-radius: 10px; /* Optional: to make the border rounded */
         }
         @keyframes slideIn {
             from { transform: translateY(-20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
-        .game-link {
+        .game-link, .team-info-link {
             display: inline-block;
             margin: 10px;
             padding: 15px 30px;
-            background: linear-gradient(135deg, #66bb6a, #43a047);
-            color: white;
+            background: #1db954;
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 15px;
+            border-radius: 50px;
             font-size: 1.2em;
             font-weight: bold;
-            box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
             animation: zoomIn 1s ease-in-out;
+            border: 2px solid  #121212; /* Add thin border */
         }
         @keyframes zoomIn {
             from { transform: scale(0.5); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
-        .game-link:hover {
-            background: linear-gradient(135deg, #4caf50, #388e3c);
-            transform: scale(1.05);
-            box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.3), 0 8px 12px rgba(0, 0, 0, 0.2);
+        .game-link:hover, .team-info-link:hover {
+            background-color: #1ed760;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
         }
         .team-info-link {
             position: absolute;
             top: 20px;
             right: 20px;
-            padding: 15px 30px;
             background-color: #e53935;
-            color: white;
-            text-decoration: none;
-            border-radius: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-            box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-            animation: zoomIn 1s ease-in-out;
         }
         .team-info-link:hover {
-            background-color: #d32f2f;
-            transform: scale(1.05);
-            box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.3), 0 8px 12px rgba(0, 0, 0, 0.2);
+            background-color: #ff5252;
+        }
+        /* Media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            h2 {
+                font-size: 2em; /* Adjust font size for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Choose a Game to Play</h1>
+    <h2>CHOOSE A GAME TO PLAY</h2>
     <a href="Hangman/index.html" class="game-link">Hangman</a>
     <a href="number guessing game/index.html" class="game-link">Number Guessing</a>
-    <a href="Quiz/index.html" class="game-link">Quiz</a>
+    <a href="Quiz/index.html" class="game-link">Tic Tac Toe</a>
     <a href="Rock papers scissors/index.html" class="game-link">Rock Paper Scissors</a>
     <a href="word scramble/index.html" class="game-link">Word Scramble</a>
     <a href="Team/index.html" class="team-info-link">Team Info</a>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
 
