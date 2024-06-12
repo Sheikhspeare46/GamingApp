@@ -54,7 +54,3 @@ const checkWord = () => {
 refreshBtn.addEventListener("click", initGame);
 checkBtn.addEventListener("click", checkWord);
 
-}
-
-refreshBtn.addEventListener("click", initGame);
-checkBtn.addEventListener("click", checkWord);
